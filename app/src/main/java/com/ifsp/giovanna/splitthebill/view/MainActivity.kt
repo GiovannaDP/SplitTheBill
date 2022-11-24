@@ -17,11 +17,9 @@ import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 
-
     private val amb: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
     }
-
 
     private lateinit var marl: ActivityResultLauncher<Intent>
 
@@ -29,15 +27,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(amb.root)
 
-
         marl = registerForActivityResult(
             ActivityResultContracts.StartActivityForResult(),
         ) { resultado ->
             if (resultado.resultCode == RESULT_OK) {
                 Toast.makeText(this,"ok", Toast.LENGTH_SHORT).show()
             }}
-
-
 
         amb.dividirContaBt.setOnClickListener {
             val valor = (amb.valorTotalEt.text.toString()).toDouble()
@@ -54,6 +49,5 @@ class MainActivity : AppCompatActivity() {
             peopleIntent.putExtra(Constant.BILL_PEOPLE, bill)
             startActivity(peopleIntent)
         }
-
     }
 }

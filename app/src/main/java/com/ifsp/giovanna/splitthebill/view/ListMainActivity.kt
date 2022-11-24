@@ -28,7 +28,7 @@ class ListMainActivity : AppCompatActivity() {
 
     private var quantidadePessoas = 0
     private var valorPorPessoa = 0.0
-    // Data source
+
     private val personList: MutableList<Person> = mutableListOf()
     private lateinit var carl: ActivityResultLauncher<Intent>
     private lateinit var marl: ActivityResultLauncher<Intent>
@@ -91,8 +91,6 @@ class ListMainActivity : AppCompatActivity() {
         }
     }
 
-
-
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
@@ -143,7 +141,6 @@ class ListMainActivity : AppCompatActivity() {
             else -> { false }
         }
     }
-
 
     private fun fillContactList() {
         for (i in 1 ..quantidadePessoas.toInt()){

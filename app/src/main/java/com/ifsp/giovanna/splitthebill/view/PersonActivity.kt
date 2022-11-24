@@ -65,11 +65,6 @@ class PersonActivity : AppCompatActivity() {
         }
     }
 
-
-
-//
-
-//
     fun diferenca(valorPago: Double, valorAPagar: Double){
         var diferenca = valorAPagar - valorPago
 
