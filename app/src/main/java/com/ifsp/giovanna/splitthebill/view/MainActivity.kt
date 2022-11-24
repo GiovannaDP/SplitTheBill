@@ -10,10 +10,6 @@ import androidx.activity.result.contract.ActivityResultContracts
 import com.ifsp.giovanna.splitthebill.databinding.ActivityMainBinding
 import com.ifsp.giovanna.splitthebill.model.Bill
 import com.ifsp.giovanna.splitthebill.model.Constant
-import com.ifsp.giovanna.splitthebill.model.Constant.BILL_PEOPLE
-import com.ifsp.giovanna.splitthebill.model.Constant.BILL_VALOR
-import com.ifsp.giovanna.splitthebill.model.Person
-import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 

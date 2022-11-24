@@ -7,7 +7,6 @@ import android.view.View
 import com.ifsp.giovanna.splitthebill.databinding.ActivityPersonBinding
 import com.ifsp.giovanna.splitthebill.model.Constant
 import com.ifsp.giovanna.splitthebill.model.Person
-import kotlin.math.roundToLong
 import kotlin.random.Random
 
 class PersonActivity : AppCompatActivity() {
