@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="25sp"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor pago: R$"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/valorpagoTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="valor pago"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_red_dark"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
